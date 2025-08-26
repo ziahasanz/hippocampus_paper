@@ -1,11 +1,27 @@
-**This repository hosts all codes used for analyzing snRNA-Seq datasets in this study.**
+# snRNA-Seq Analysis Code for Rat Hippocampus (Pretangle Tau Model)
 
-1. The FASTq files of each sample are processed using Cell Ranger v7.2 (10x Genomics).
+This repository hosts all codes used for analyzing the single-nucleus RNA sequencing (snRNA-Seq) datasets in this study.
 
-2. The Cell Ranger output files (filtered_matrix.h5) for each sample are utilized for the next step in the analysis.
+## Workflow
 
-3. Each sample's filtered_matrix.h5 files are individually processed for QC in the Trailmaker, hosted by Parse Biosciences (https://www.parsebiosciences.com/data-analysis/).
+1. **Raw data processing**  
+   FASTQ files for each sample were processed using **Cell Ranger v7.2** (10x Genomics).
 
-4. The processed files for each sample are aggregated, downloaded and converted into a single anndata file (hippo_allcelltypesData.h5ad).
+2. **Cell Ranger outputs**  
+   The `filtered_matrix.h5` files generated for each sample were used as input for downstream analysis.
 
-5. The aggregated file is then used for downstream analysis and figure generation.
+3. **Quality control**  
+   Each sample’s `filtered_matrix.h5` file was processed individually for quality control (QC) using **Trailmaker**, hosted by Parse Biosciences (https://www.parsebiosciences.com/data-analysis/).
+
+4. **Aggregation**  
+   The QC-passed files were aggregated, downloaded, and converted into a single AnnData file:  
+   **`hippo_allcelltypesData.h5ad`**.
+
+5. **Downstream analysis**  
+   The aggregated file was used for clustering, differential gene expression analysis, enrichment analysis, and figure generation.
+
+---
+
+## Data Availability
+- The **raw sequencing data** are deposited in the **Gene Expression Omnibus (GEO)** under accession number **GSE306235** (private reviewer access; will be made public upon acceptance).  
+- The **processed datasets** (AnnData `.h5ad`, DEGs, and GO enrichment files) are available in the **Zenodo record** (private reviewer link: https://zenodo.org/
