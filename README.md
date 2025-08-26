@@ -1,6 +1,6 @@
-# snRNA-Seq Analysis Code for Rat Hippocampus (Pretangle Tau Model)
+# snRNA-Seq Analysis Code for Pretangle Tau Model of Rat Hippocampus
 
-This repository hosts all codes used for analyzing the single-nucleus RNA sequencing (snRNA-Seq) datasets in this study.
+This repository hosts all the code used for analyzing the single-nucleus RNA sequencing (snRNA-Seq) datasets in this study.
 
 ## Workflow
 
