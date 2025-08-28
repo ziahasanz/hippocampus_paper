@@ -4,6 +4,9 @@ This repository hosts all the code used for analyzing the single-nucleus RNA seq
 
 ## Workflow
 
+![Alt text](https://github.com/ziahasanz/hippocampus_paper/blob/main/snRNA-Seq%20data%20analysis%20worflow%20for%20hippocampus.png)
+<p align="right"> <i>Image Created in <a href="https://BioRender.com">BioRender</a></i></p>
+
 1. **Raw data processing**  
    FASTQ files for each sample were processed using **Cell Ranger v7.2** (10x Genomics).
 
