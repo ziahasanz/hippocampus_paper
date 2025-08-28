@@ -5,6 +5,9 @@ library(patchwork)
 # Path to directory with CSV files
 path <- "~/you_file_path/in_DEGs/Cluster_#" #load the data from the in_DEGs, for examples Cluster_1
 
+# NOTE: Some group × cluster files have no DEGs (<10 nuclei in replicates). For these, a placeholder “-error.csv” (e.g., eERM_C10-error.csv) is saved.
+# Each contains, non-significant gene, used only to keep plotting consistent. These rows are automatically removed by DEG filters and do not affect results.
+
 # Desired 10-panel order: 5 female (row 1), 5 male (row 2)
 order_female <- c("cE14F","eSTRF","eERF","lSTRF","lERF")
 order_male   <- c("cE14M","eSTRM","eERM","lSTRM","lERM")
